@@ -17,7 +17,7 @@ A web application that converts text into ASCII art using different banner style
 git clone https://learn.zone01oujda.ma/git/erezzoug/ascii-art-web-dockerize
 cd ascii-art-web-dockerize
 docker build -t ascii-art-web-dockerize .
-docker run -d -p 8080:8080 <created-docker-image>
+docker run -d -p 8080:8080 ascii-art-web-dockerize
 ```
 
 Then open `http://localhost:8080` in your browser.
