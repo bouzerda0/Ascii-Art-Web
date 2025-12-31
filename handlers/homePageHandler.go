@@ -6,10 +6,6 @@ import (
 	"net/http"
 )
 
-type Data struct {
-	Output string
-}
-
 func HomePageHandler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 		ErrorHandler(w, "404 not found", http.StatusNotFound)

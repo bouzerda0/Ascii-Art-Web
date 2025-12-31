@@ -4,10 +4,9 @@
 
 A web application that converts text into ASCII art using different banner styles. Built with Go and HTML and CSS and Docker, featuring a clean interface for transforming text into stylized ASCII representations.
 
-## Authors
+## Author
 
-- Elmehdi Rezoug (@erezzoug)
-- Aymane Bouzerda (@abouzerd)
+- Aymane Bouzerda (@bouzerda0)
 
 ## Usage
 

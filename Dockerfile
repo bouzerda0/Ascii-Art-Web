@@ -1,7 +1,17 @@
-FROM golang:1.22.3-alpine
-LABEL description="image for the project ascii-art-web-dockerize" authors="elmehdi rezoug, aymane bouzerda" version="1.0"
+# Use the official lightweight Golang image based on Alpine Linux
+FROM golang:1.23-alpine
+
+# Set the working directory inside the container for organization
 WORKDIR /app
+
+# Copy all local files to the container's working directory
 COPY . .
-RUN go build -o app
-EXPOSE 8080
-ENTRYPOINT ["./app"]
+
+# Compile the Go application into a binary named 'app'
+RUN go build -o app .
+
+# Expose port 8000 as defined in the Go server logic
+EXPOSE 8000
+
+# Run the compiled binary when the container starts
+CMD ["./app"]
